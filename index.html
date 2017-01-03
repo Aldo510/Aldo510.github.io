@@ -1,19 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Reinserta</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    <div class="">
-      <img class="image" src="rein.jpg" alt="reinserta">
-    </div>
-    <p>Estamos trabajando para mejorar nuestra página web, en el siguiente enlace: <a href="https://reinserta-45d79.firebaseapp.com/informe2016.html">Informe</a> podrás conocer nuestro informe anual de actividades.
-<br><br>
-Seguimos a tus órdenes en:
-<br><br>
-contacto@reinserta.org</p>
-  </body>
+
+<!-- Mirrored from www.reinserta.org/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Sep 2016 15:26:04 GMT -->
+<head>
+		<title>Reinserta - Trabajando con el México invisible</title>
+		<meta charset="UTF-8">
+		<meta name="theme-color" content="#dadada">
+		<!--Falta por poner: Cambiar la foto que me mandara
+		pestaña se llamara:Juventud sin prisiones
+		y lo de adentro sera: Programa de Jóvenes en proceso de reinserción
+	poner el contenido y el
+formulario a un correo: contacto@reinserta.org
+y un parrafo que me pasara
+con colores de pagina
+aviso de privacidad
+quitar direccion postal
+poner correo
+y dejar telefono -->
+		<meta http-equiv="Content-Language" content="es"/>
+		<meta name="google" content="notranslate" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="images/reinserta_favicon.png">
+
+		<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/dotimeout.js"></script>
+		<script src="js/main.js"></script>
+
+		<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyBpkniirkN0NqU9_5CW5tOLQs37dpOem7s",
+		    authDomain: "reinserta-45d79.firebaseapp.com",
+		    databaseURL: "https://reinserta-45d79.firebaseio.com",
+		    storageBucket: "",
+		    messagingSenderId: "763121330554"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+	</head>
+	<body>
+		<img src="images/main_bk.png" id="bg" alt="">
+		<div class="main_bk_white"></div>
+		<section>
+			<header>
+				<div class="header_logo">
+					<img src="images/main_logo.png" alt="">
+				</div>
+				<div class="header_menu">
+					<!-- div id="lang_select" class="header_menu_element" style="border: 1px solid #cccccc;"><img src="images/mex_flag.png" width="18">&nbsp;&nbsp; Español&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down"></i></div -->
+
+						<a href="about.html">
+						<div class="header_menu_element" style="margin: 0px 10px 0px 10px; border: 1px solid #ffffff;">Acerca de Reinserta</div>
+						</a>
+
+						<a href="https://www.paypal.com/mx/cgi-bin/webscr?cmd=_flow&SESSION=s-IE7YOBtKb4Mwu04cOsHQEy1O2l39hKqqyhlG8gMbpKz_CJQDfSh3X2oR0&dispatch=5885d80a13c0db1f8e263663d3faee8d333dc9aadeed3fe0b5b299d55fd35542">
+						<div class="header_menu_element" style="margin: 0px 10px 0px 10px; border: 1px solid #ffffff;">Hacer donativo</div>
+						</a>
+
+						<a href="http://ninosinvisibles.reinserta.org/">
+						<div class="header_menu_element" style="margin: 0px 10px 0px 10px; border: 1px solid #ffffff;">Anuario Niños Invisibles</div>
+						</a>
+						<!-- <a href="prueba.html">
+						<div class="header_menu_element" style="margin: 0px 10px 0px 10px; border: 1px solid #ffffff;">Juventud sin prisiones</div> -->
+					</a>
+
+
+					<div class="header_menu_lang_box">
+						<div class="header_menu_lang_box_element">
+							<img src="images/usa_flag.png" width="18">&nbsp;&nbsp; English
+						</div>
+						<div class="header_menu_lang_box_element">
+							<img src="images/mex_flag.png" width="18">&nbsp;&nbsp; Español
+						</div>
+					</div>
+				</div>
+			</header>
+		</section>
+		<section style="top: 90px;">
+			<div class="main_body">
+				<div class="main_body_donate">
+					<div class="main_body_donate_steps">
+						<div class="main_body_donate_steps_style_title">
+							¡Ayúdanos con tu donación!<br />
+						</div>
+						<div class="main_body_donate_steps_style">
+							<div class="main_body_donate_steps_title active_steps_title">
+								Amount
+							</div>
+							<div class="main_body_donate_steps_number active_steps_box">
+								1
+							</div>
+						</div>
+						<div class="main_body_donate_steps_line_1"></div>
+						<div class="main_body_donate_steps_style">
+							<div class="main_body_donate_steps_title">
+								Info
+							</div>
+							<div class="main_body_donate_steps_number">
+								2
+							</div>
+						</div>
+						<div class="main_body_donate_steps_line_2"></div>
+						<div class="main_body_donate_steps_style">
+							<div class="main_body_donate_steps_title">
+								Payment
+							</div>
+							<div class="main_body_donate_steps_number">
+								3
+							</div>
+						</div>
+						<div class="main_body_donate_steps_line_3"></div>
+						<div class="main_body_donate_steps_style">
+							<div class="main_body_donate_steps_title">
+								Confirm
+							</div>
+							<div class="main_body_donate_steps_number">
+								4
+							</div>
+						</div>
+					</div>
+					<div class="main_body_donate_content">
+						<div class="main_body_donate_type">
+							<div class="main_body_donate_type_text active_donation donate_recur">Donación<br />recurrente</div>
+							<div class="main_body_donate_type_text donate_unic">Donación<br>única</div>
+						</div>
+						<div class="paypal_recu">
+							<form id="form_paypal_rec" action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" value="_xclick-subscriptions" type="hidden">
+								<script language="javascript">
+								function actualizaPeriodo(showed) {
+								document.getElementById("p3").value = showed.value;
+								}
+								</script>
+								<input name="business" value="reinsertaunmexicano@gmail.com" type="hidden">
+								<input name="return" value="http://www.reinserta.org/" type="hidden">
+								<input name="item_name" value="Donacion Recurrente - Reinserta un Mexicano A.C
+								" type="hidden">
+								<input name="no_shipping" value="1" type="hidden">
+								<input name="no_note" value="1" type="hidden">
+								<input name="currency_code" value="MXN" type="hidden">
+								<input name="p3" id="p3" type="hidden" value="1">
+								<input name="t3" type="hidden" value="M">
+								<input name="src" value="1" type="hidden">
+								<input name="sra" value="1" type="hidden">
+								<table border="0" width="25%">
+								<tbody>
+								<tr>
+								<td valign="middle"><label>Cantidad a Donar</label></td>
+								<td><span style="font-size: 13pt;">$</span></td>
+								<td><input id="input_amount_rec" class="text" name="a3" type="text"></td>
+								</tr>
+
+								<tr>
+								<td><label>Frecuencia:</label></td>
+								<td>&nbsp;</td>
+								<td><select name="periodo" class="select" onChange="actualizaPeriodo(this)">
+								<option value="1">Mensual </option>
+								<option value="3">Trimestral </option>
+								<option value="6">Semestral </option>
+								<option value="12">Anual</option>
+								</select></td>
+								<td>&nbsp;</td>
+								</tr>
+								</tbody>
+								</table>
+								<p></p>
+								<br>
+								<input type="image" src="../www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal,
+								la forma más segura y rápida de pagar en línea.">
+								<img alt="" border="0" src=https://ak1s.abmr.net/is/www.paypalobjects.com?U=/es_XC/i/scr/pixel.gif&amp;V=3-yJGEDWp1o8EsAvvakqILCcuZkRH35QAsXoAC8pkTQdb0zkFu83voIo63yeUTJrCX&amp;I=F540C71C5A158DE&amp;D=paypalobjects.com&amp;01AD=1&amp; width="1" height="1"> 					</form>
+							</div>
+
+						<div class="paypal_unic">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+								<input type="hidden" name="cmd" value="_donations">
+								<input type="hidden" name="business" value="reinsertaunmexicano@gmail.com">
+								<input type="hidden" name="lc" value="MX">
+								<input type="hidden" name="item_name" value="Donacion Unica - Reinserta un Mexicano A.C">
+								<input type="hidden" name="no_note" value="0">
+								<input type="hidden" name="currency_code" value="MXN">
+								<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+								<input type="image" src="../www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+								<img alt="" border="0" src="https://ak1s.abmr.net/is/www.paypalobjects.com?U=/es_XC/i/scr/pixel.gif&amp;V=3-yJGEDWp1o8EsAvvakqILCcuZkRH35QAsXoAC8pkTQdb0zkFu83voIo63yeUTJrCX&amp;I=F540C71C5A158DE&amp;D=paypalobjects.com&amp;01AD=1&amp;" width="1" height="1">
+							</form>
+						</div>
+
+						<div class="main_body_donate_pbpaypal">
+							<img src="images/paypal_logo.png" alt="" width="120">
+						</div>
+
+						<div class="main_body_donate_aporta">
+							<a href="https://www.aporta.org.mx/reinserta"><img src="assets/img_btnDonar_v1.png" width="208" height="46"/></a>
+						</div>
+
+					</div>
+				</div>
+				<div class="main_body_message">
+					<div class="main_body_message_text">Reinserta existe para crear un país más seguro trabajando con el México invisible,<br>las cárceles del país.</div>
+				<div class="main_body_message_ltext">Tu donación va a permitir a muchos tener una segunda oportunidad.</div>
+				</div>
+
+				<a href="http://ninosinvisibles.reinserta.org/">
+				<div class="main_body_ninios_btn">
+					Anuario Niños Invisibles
+				</div>
+				</a>
+
+				<a href="about.html">
+				<div class="main_body_message_btn">
+					Acerca de Reinserta
+				</div>
+				</a>
+			</div>
+		</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69686702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+
+<!-- Mirrored from www.reinserta.org/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Sep 2016 15:26:04 GMT -->
 </html>
